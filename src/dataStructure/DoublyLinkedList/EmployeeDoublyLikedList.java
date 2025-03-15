@@ -20,6 +20,18 @@ public class EmployeeDoublyLikedList {
         size++;
     }
 
+    public void addToEnd(Employee employee) {
+        EmployeeNode node = new EmployeeNode(employee);
+        if (tail == null) {
+            head = node;
+        } else {
+            tail.setNext(node);
+            node.setPrev(tail);
+        }
+        tail = node;
+        size++;
+    }
+
     public EmployeeNode getHead() {
         return head;
     }

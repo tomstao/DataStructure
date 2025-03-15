@@ -16,5 +16,13 @@ public class Main {
 
         list.printList();
         System.out.println(list.getSize());
-        }
+
+        Employee billEnd =  new Employee("Bill", "End", 4567);
+
+        list.addToEnd(billEnd);
+        System.out.println("After adding to the end we have " + list.getSize());
+        list.printList();
+
+    }
+
 }
