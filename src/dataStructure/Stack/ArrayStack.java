@@ -11,6 +11,9 @@ import java.util.EmptyStackException;
 - peel -- gets the top item on the stack without popping it
 - Ideal backing data structure: linked list
 
+** choose array as the backing data structure if you don't expect to resize it frequently.
+** if you do, maybe the linked list will be the better choice.
+
  */
 public class ArrayStack {
 
