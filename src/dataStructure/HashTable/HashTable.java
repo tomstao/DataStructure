@@ -77,6 +77,7 @@ public class HashTable {
 
         for (int i = hashKey; i < hashTable.length; i++) {
             if (hashKey == hashTable.length - 1) hashKey = 0;
+            if (hashKey == stopIndex) break;
             if (hashTable[i] == null) continue;
             if (hashTable[i].key.equals(key)) {
                 return i;
