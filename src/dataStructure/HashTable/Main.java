@@ -23,8 +23,11 @@ public class Main {
         System.out.println("Find key wilson: :" + ht.get("Wilson"));
         ht.remove("Wilson");
         System.out.println("Find key Smith: " + ht.get("Smith"));
-        ht.remove("Jones");
+        ht.remove("Smith");
 
+        ht.print();
+
+        ht.put( "Smith",marySmith);
         ht.print();
     }
 }
